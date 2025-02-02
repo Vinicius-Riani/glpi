@@ -68,7 +68,8 @@ systemctl restart apache2
 # Criar diretório onde o GLPi será instalado
 mkdir /var/www/glpi
 # Baixar o sistema GLPi
-wget https://github.com/glpi-project/glpi/releases/download/10.0.17/glpi-10.0.17.tgz | tar -xvzf glpi-10.0.17.tgz /var/www/html/glpi/
+wget https://github.com/glpi-project/glpi/releases/download/10.0.17/glpi-10.0.17.tgz 
+tar -xvzf glpi-10.0.17.tgz /var/www/html/glpi/
 # Movendo diretórios "files" e "config" para fora do GLPi 
 mv /var/www/html/glpi/files /var/www/html/glpi/
 mv /var/www/html/glpi/config /var/www/html/glpi/
